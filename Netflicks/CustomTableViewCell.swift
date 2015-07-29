@@ -122,3 +122,7 @@ class CustomTableViewCell: UITableViewCell, UIScrollViewDelegate {
     }
 
 }
+
+class CustomFavTableViewCell: UITableViewCell {
+
+}

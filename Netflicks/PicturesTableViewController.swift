@@ -138,6 +138,8 @@ class PicturesTableViewController: UITableViewController {
         
         if segue.identifier == "showFavs" {
             //configure favs controller
+            let favsController = segue.destinationViewController as! FavsViewController
+            favsController.detailShow = indexShow
         }
     }
 }

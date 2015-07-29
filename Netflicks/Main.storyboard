@@ -5,37 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
-        <scene sceneID="TiP-kF-iuO">
-            <objects>
-                <tableViewController id="8LF-sN-5Mo" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ajT-8K-6qD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7XS-aQ-WOJ">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7XS-aQ-WOJ" id="UZU-JX-FND">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="8LF-sN-5Mo" id="6ce-do-woy"/>
-                            <outlet property="delegate" destination="8LF-sN-5Mo" id="LZL-CZ-URZ"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="cKM-OH-mSc"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="waw-gD-5GW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1853" y="-292"/>
-        </scene>
         <!--Detail View Controller-->
         <scene sceneID="DsH-d5-E7b">
             <objects>
-                <viewController id="3y0-j2-thf" customClass="DetailViewController" customModule="XboxReplica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3y0-j2-thf" customClass="DetailViewController" customModule="Netflicks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MeB-B1-dIk"/>
                         <viewControllerLayoutGuide type="bottom" id="1A9-Ey-gTC"/>
@@ -101,7 +74,7 @@
         <!--Web View Controller-->
         <scene sceneID="Wt0-Px-4DT">
             <objects>
-                <viewController id="hUX-Jx-8ix" customClass="WebViewController" customModule="XboxReplica" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hUX-Jx-8ix" customClass="WebViewController" customModule="Netflicks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5RD-pZ-Qub"/>
                         <viewControllerLayoutGuide type="bottom" id="szS-lD-hu8"/>
@@ -132,13 +105,13 @@
         <!--Netflicks-->
         <scene sceneID="PEe-6B-S0m">
             <objects>
-                <tableViewController id="34y-lB-TaI" customClass="PicturesTableViewController" customModule="XboxReplica" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="34y-lB-TaI" customClass="PicturesTableViewController" customModule="Netflicks" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="172" sectionHeaderHeight="22" sectionFooterHeight="22" id="bCg-4w-dUH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" rowHeight="172" id="Qf6-we-dab" customClass="CustomTableViewCell" customModule="XboxReplica" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contentCell" rowHeight="172" id="Qf6-we-dab" customClass="CustomTableViewCell" customModule="Netflicks" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="320" height="172"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qf6-we-dab" id="huI-y0-YBD">
@@ -171,7 +144,7 @@
                     <navigationItem key="navigationItem" title="Netflicks" id="T8Q-io-fIV"/>
                     <connections>
                         <segue destination="3y0-j2-thf" kind="push" identifier="showDetail" id="5Cs-Tt-rTy"/>
-                        <segue destination="8LF-sN-5Mo" kind="push" identifier="showFavs" id="9iO-L1-ZZP"/>
+                        <segue destination="Pom-Ki-14d" kind="push" identifier="showFavs" id="RIp-Da-EHQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQR-eV-83r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,6 +173,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znB-Qi-thL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1025" y="342"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="V8L-cI-gUc">
+            <objects>
+                <tableViewController id="Pom-Ki-14d" customClass="FavsViewController" customModule="Netflicks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="111" sectionHeaderHeight="22" sectionFooterHeight="22" id="khu-6B-GrA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favCell" textLabel="naj-Im-SHo" rowHeight="111" style="IBUITableViewCellStyleDefault" id="6VB-S2-lgj" customClass="CustomFavTableViewCell" customModule="Netflicks" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="320" height="172"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6VB-S2-lgj" id="Mey-T9-Iue">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="naj-Im-SHo">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Pom-Ki-14d" id="WOZ-3f-78C"/>
+                            <outlet property="delegate" destination="Pom-Ki-14d" id="fXT-O5-kQr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorites" id="4Rl-dm-JxV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rHI-z6-4cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853" y="-290"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

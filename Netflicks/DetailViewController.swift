@@ -16,24 +16,26 @@ class DetailViewController: UIViewController {
     
     var detailShow: show!
     var favorites: UIBarButtonItem!
-    var favoriteShowsList: [show]!
+    var favoriteShowTitlesList: [String]!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //first querying favorite showobject and see if it already exists, then setting color of menu depending on if detailShow is already a fav
-        if NSUserDefaults.standardUserDefaults().objectForKey("favs") != nil {
-            favoriteShowsList = NSUserDefaults.standardUserDefaults().objectForKey("favs") as! [show]
-        }
-    
-        
+        //setting up nav items
         let logo = UIImage(named: "fav.png")
         favorites = UIBarButtonItem(image: logo, style: UIBarButtonItemStyle.Plain, target: self, action: "favoritesTapped")
         favorites.tintColor = hexStringToUIColor("#5B615B")
         self.navigationItem.rightBarButtonItem = favorites
         
-        //show specific setup
+        //defaults query to check if show is already a fav
+        if NSUserDefaults.standardUserDefaults().objectForKey("favs") != nil {
+            favoriteShowTitlesList = NSUserDefaults.standardUserDefaults().objectForKey("favs") as! [String]
+            let showIsFav = favoriteShowTitlesList.filter { $0 == self.detailShow.title }
+            self.favorites.tintColor = hexStringToUIColor(showIsFav.count > 0 ? "#C40000" : "#5B615B")
+        }
+    
+        //specific setup depending on show
         imageView.image = detailShow.imagePath
         titleLabel.text = detailShow.title
         descriptionLabel.text = detailShow.comments
@@ -41,8 +43,12 @@ class DetailViewController: UIViewController {
     
     func favoritesTapped() {
         //update dat bish
-        favoriteShowsList.append(detailShow)
-        NSUserDefaults.standardUserDefaults().setObject(favoriteShowsList, forKey: "favs")
+        if favoriteShowTitlesList != nil {
+            favoriteShowTitlesList.append(detailShow.title)
+        } else {
+            favoriteShowTitlesList = [detailShow.title]
+        }
+        NSUserDefaults.standardUserDefaults().setObject(favoriteShowTitlesList, forKey: "favs")
         
         self.alertShow("Favorite Added", alertMessage: "U Rike??")
         favorites.tintColor = hexStringToUIColor("#C40000")
