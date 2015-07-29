@@ -118,6 +118,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="g4X-et-FP2" secondAttribute="centerX" id="gkl-m3-lph"/>
                             <constraint firstAttribute="centerX" secondItem="oq1-RZ-Akt" secondAttribute="centerX" id="pyU-nK-GQL"/>
                             <constraint firstItem="g4X-et-FP2" firstAttribute="top" secondItem="oq1-RZ-Akt" secondAttribute="bottom" constant="29" id="xE5-Xx-VCc"/>
                         </constraints>
@@ -220,6 +221,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Egy-BI-Tkh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
@@ -271,7 +273,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHI-z6-4cj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853" y="-290"/>
+            <point key="canvasLocation" x="1882" y="-300"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

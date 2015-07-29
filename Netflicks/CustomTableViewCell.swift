@@ -19,9 +19,6 @@ class CustomTableViewCell: UITableViewCell, UIScrollViewDelegate {
     var sectionShows: [show]! {
         didSet {
             
-            for var i = 0; i < sectionShows.count; ++i  {
-                println(sectionShows[i].imagePath)
-            }
             //quickly storing the images from the shows into pageimages array
             for var i = 0; i < sectionShows.count; ++i  {
                 pageImages.append(sectionShows[i].imagePath)

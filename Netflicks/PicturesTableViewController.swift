@@ -8,14 +8,6 @@
 
 import UIKit
 
-//TODOS: (and this is it...)
-//Xlet user add shows to their favorites from the detail view using realm
-
-//Xlet user save which season/episode they are on for each show in the favorites section, if it is a film let them input whether they have seen it or not
-//Xnetwork to show a webpage for each show or something from the detail view page
-//add trailer player instead of wikipedia bullshit dude
-//if already in favs when you go to the detail set a value to true and make it red and allow user to remove from favs right there too
-
 class PicturesTableViewController: UITableViewController {
 
     var shows: [show]!
@@ -24,22 +16,20 @@ class PicturesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-
-        
         //setting nav item
         let logo = UIImage(named: "fav.png")
         var favorites : UIBarButtonItem = UIBarButtonItem(image: logo, style: UIBarButtonItemStyle.Plain, target: self, action: "favoritesTapped")
         favorites.tintColor = hexStringToUIColor("#ECECEC")
         self.navigationItem.leftBarButtonItem = favorites
         
-        //Next steps: load actual live data, convert for video, user authentication, and slider menu options
+        //Next steps: load actual live data, load full video, user authentication, see what your friends favorites are, and slider menu options
+        
         setUpData()
         
     }
     
     func setUpData() {
-        //this code is so hard it would take three blue diamond pickaxes to break...
+        //this data is so hardcoded it would take three blue diamond pickaxes to break...
         
         //modernish
         let house = show(type: categoryType.modern, featureFilm: false, url: "https://en.wikipedia.org/wiki/House_of_Cards_(U.S._TV_series)", tubeUrl: "https://www.youtube.com/watch?v=sU9QTLXYCCc", imagePath: UIImage(named: "house.png")!, title: "House of Cards", comments: "Frank Underwood gets shit done. Although sometimes it is easy to disagree with his methods, in the end he makes things happen. The show sheds a new light on what it takes to be a politician, and makes the viewer question what traits they actually value in their political representatives.")
