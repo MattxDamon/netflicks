@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EDB5ECEFF81D9E230DD12E6 /* Pods-Netflicks-YouTubePlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B64382627DD90F1FD968BF8F /* Pods-Netflicks-YouTubePlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		543FDEF7391E399C7677A8ED /* Pods-NetflicksTests-YouTubePlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4535BBAC98666B900C03369F /* Pods-NetflicksTests-YouTubePlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		563B9CC91415D9922B189D15 /* Pods-NetflicksTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D90EBFF0C465BE5485845B60 /* Pods-NetflicksTests-dummy.m */; };
+		568A801AADF9827BAF305979 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB08C90503AB0BA492C2E5 /* YouTubePlayer.swift */; };
+		68B2247213FF274E0FC8FD6B /* Pods-NetflicksTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D1AD833B2B5C4FCEBD091F /* Pods-NetflicksTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E173EEBF8E843C9CC3E0382 /* Pods-Netflicks-YouTubePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC60A8C9AC3ED92B56E7CA1 /* Pods-Netflicks-YouTubePlayer-dummy.m */; };
+		7D8E23334D66B380C4B4801E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EBD68400DE5D0FA3671E6A /* Foundation.framework */; };
+		82242FAE9C431498360EF585 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EBD68400DE5D0FA3671E6A /* Foundation.framework */; };
+		B7A44447222F3DFD486FF09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EBD68400DE5D0FA3671E6A /* Foundation.framework */; };
+		CFA9F4378993F0BCD44C38B3 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CB08C90503AB0BA492C2E5 /* YouTubePlayer.swift */; };
+		E1F865E39CB6A1B1064FC4AE /* Pods-NetflicksTests-YouTubePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8873F58B9E69A6B108827EC /* Pods-NetflicksTests-YouTubePlayer-dummy.m */; };
+		E86122232D98AA0E297784CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EBD68400DE5D0FA3671E6A /* Foundation.framework */; };
+		FF150D105E2577892701B493 /* Pods-Netflicks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B13C4F38151E1A9BB18F5656 /* Pods-Netflicks-dummy.m */; };
+		FFA0E50AA9A1075D8ACE94D0 /* Pods-Netflicks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58340B8634D553C7D170E472 /* Pods-Netflicks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87E762CB27CED96D96D18777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0D2356CBCDFBBA594DF6B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB8E4397E5F30B9BE838F3CB;
+			remoteInfo = "Pods-NetflicksTests-YouTubePlayer";
+		};
+		A61880787825FD2834487FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0D2356CBCDFBBA594DF6B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 266BAF5A3D36DA251BCA3E67;
+			remoteInfo = "Pods-Netflicks-YouTubePlayer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006BA413BCC5D6EAD0F16163 /* Pods-Netflicks-YouTubePlayer-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Netflicks-YouTubePlayer-Private.xcconfig"; sourceTree = "<group>"; };
+		0206F8EE1B69535A00023A58 /* YTPlayer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = YTPlayer.html; sourceTree = "<group>"; };
+		05CB08C90503AB0BA492C2E5 /* YouTubePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = YouTubePlayer/YouTubePlayer/YouTubePlayer.swift; sourceTree = "<group>"; };
+		0C86D700151200B09C598F26 /* Pods-Netflicks-YouTubePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Netflicks-YouTubePlayer-prefix.pch"; sourceTree = "<group>"; };
+		158E65E31C87ADC5D3603F9E /* Pods-Netflicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Netflicks.debug.xcconfig"; sourceTree = "<group>"; };
+		15A961E85A24F80F71F17262 /* Pods-NetflicksTests-YouTubePlayer-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflicksTests-YouTubePlayer-Private.xcconfig"; path = "../Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer-Private.xcconfig"; sourceTree = "<group>"; };
+		177FC48D0C48FF3E67B991A3 /* Pods-Netflicks-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Netflicks-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FCDB766EF47797D87E35474 /* Pods-Netflicks-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Netflicks-acknowledgements.markdown"; sourceTree = "<group>"; };
+		294BD6AF2D01191BA5A98935 /* Pods-NetflicksTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetflicksTests-frameworks.sh"; sourceTree = "<group>"; };
+		29D6D030CC73F19E1B758933 /* Pods-NetflicksTests-YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-NetflicksTests-YouTubePlayer.modulemap"; path = "../Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer.modulemap"; sourceTree = "<group>"; };
+		3368AE9F19B39FFFB299C13C /* Pods-NetflicksTests-YouTubePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-NetflicksTests-YouTubePlayer-prefix.pch"; path = "../Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer-prefix.pch"; sourceTree = "<group>"; };
+		3FD0C2449D19682C8DF6D941 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4535BBAC98666B900C03369F /* Pods-NetflicksTests-YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-NetflicksTests-YouTubePlayer-umbrella.h"; path = "../Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
+		462B3FD8FA9767159F11EF87 /* Pods_NetflicksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflicksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58340B8634D553C7D170E472 /* Pods-Netflicks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Netflicks-umbrella.h"; sourceTree = "<group>"; };
+		5C7D37D7793FEEFFD3CB0FD3 /* Pods-NetflicksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetflicksTests.release.xcconfig"; sourceTree = "<group>"; };
+		6830EC7A4EBD8206D1A96AD2 /* Pods-Netflicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Netflicks.release.xcconfig"; sourceTree = "<group>"; };
+		6BA21797A1E6ADF74DE69F69 /* Pods-NetflicksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetflicksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		766355ECF9612264BED70B77 /* Pods-Netflicks-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Netflicks-resources.sh"; sourceTree = "<group>"; };
+		78F49611C740AA42327FC6BF /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F559CD1DDF56B4F9D582B2 /* Pods-Netflicks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Netflicks.modulemap"; sourceTree = "<group>"; };
+		87732F59C75C8C7BD1A2CD9F /* Pods-NetflicksTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetflicksTests-resources.sh"; sourceTree = "<group>"; };
+		8CF29F44FAC0786E61445C69 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901AAE518DCFFE429E044CE5 /* Pods-NetflicksTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetflicksTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		94EBD68400DE5D0FA3671E6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9DA1D5D612197CA149E5E35B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FCE02E89E3123D1FA8919A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1D1AD833B2B5C4FCEBD091F /* Pods-NetflicksTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetflicksTests-umbrella.h"; sourceTree = "<group>"; };
+		A42C6101171545CAE1DBC05D /* Pods-NetflicksTests-YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflicksTests-YouTubePlayer.xcconfig"; path = "../Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer.xcconfig"; sourceTree = "<group>"; };
+		AF73D3B72C87DF443F2A51E8 /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13C4F38151E1A9BB18F5656 /* Pods-Netflicks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Netflicks-dummy.m"; sourceTree = "<group>"; };
+		B3E1949B152DAC11B1EF7C51 /* Pods-NetflicksTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NetflicksTests.modulemap"; sourceTree = "<group>"; };
+		B64382627DD90F1FD968BF8F /* Pods-Netflicks-YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Netflicks-YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
+		B8873F58B9E69A6B108827EC /* Pods-NetflicksTests-YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-NetflicksTests-YouTubePlayer-dummy.m"; path = "../Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
+		BAC60A8C9AC3ED92B56E7CA1 /* Pods-Netflicks-YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Netflicks-YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
+		C1EDF6DB7FE740E26D3BA29B /* Pods-Netflicks-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Netflicks-environment.h"; sourceTree = "<group>"; };
+		C8EFA02B1BFA8E8D48F59692 /* Pods-Netflicks-YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Netflicks-YouTubePlayer.modulemap"; sourceTree = "<group>"; };
+		D0868DF4226D65D06B002395 /* Pods-NetflicksTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetflicksTests-environment.h"; sourceTree = "<group>"; };
+		D51BD4669CDA9D32D1F95D6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-NetflicksTests-YouTubePlayer/Info.plist"; sourceTree = "<group>"; };
+		D90EBFF0C465BE5485845B60 /* Pods-NetflicksTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetflicksTests-dummy.m"; sourceTree = "<group>"; };
+		DA2CD9E8A7DF42B9D5F8B233 /* Pods-NetflicksTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetflicksTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2836C45D5B46643B987B018 /* Pods-Netflicks-YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Netflicks-YouTubePlayer.xcconfig"; sourceTree = "<group>"; };
+		EC90E6B7F72C98EE0A63A1A2 /* Pods_Netflicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netflicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4681F1381721B0721EDBB23 /* Pods-Netflicks-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Netflicks-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0937801E9D56231C0D96D29F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A44447222F3DFD486FF09A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		378139F74912DBC00FC8DF45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8E23334D66B380C4B4801E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		466D2A00D835A02641CB0F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82242FAE9C431498360EF585 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781286B6E562D44D91A6B689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86122232D98AA0E297784CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28F2F4BFA8C1D862435EBA2E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FD0C2449D19682C8DF6D941 /* Info.plist */,
+				D51BD4669CDA9D32D1F95D6C /* Info.plist */,
+				C8EFA02B1BFA8E8D48F59692 /* Pods-Netflicks-YouTubePlayer.modulemap */,
+				E2836C45D5B46643B987B018 /* Pods-Netflicks-YouTubePlayer.xcconfig */,
+				006BA413BCC5D6EAD0F16163 /* Pods-Netflicks-YouTubePlayer-Private.xcconfig */,
+				BAC60A8C9AC3ED92B56E7CA1 /* Pods-Netflicks-YouTubePlayer-dummy.m */,
+				0C86D700151200B09C598F26 /* Pods-Netflicks-YouTubePlayer-prefix.pch */,
+				B64382627DD90F1FD968BF8F /* Pods-Netflicks-YouTubePlayer-umbrella.h */,
+				29D6D030CC73F19E1B758933 /* Pods-NetflicksTests-YouTubePlayer.modulemap */,
+				A42C6101171545CAE1DBC05D /* Pods-NetflicksTests-YouTubePlayer.xcconfig */,
+				15A961E85A24F80F71F17262 /* Pods-NetflicksTests-YouTubePlayer-Private.xcconfig */,
+				B8873F58B9E69A6B108827EC /* Pods-NetflicksTests-YouTubePlayer-dummy.m */,
+				3368AE9F19B39FFFB299C13C /* Pods-NetflicksTests-YouTubePlayer-prefix.pch */,
+				4535BBAC98666B900C03369F /* Pods-NetflicksTests-YouTubePlayer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Netflicks-YouTubePlayer";
+			sourceTree = "<group>";
+		};
+		2A8E1CD49F1E2D6EF2F3C5D0 = {
+			isa = PBXGroup;
+			children = (
+				A0FCE02E89E3123D1FA8919A /* Podfile */,
+				6E74FC1E0E58DCECF4F640B8 /* Frameworks */,
+				5F5DACA3D0A1DF84F3C9E63B /* Pods */,
+				4BCA7018579131996398336F /* Products */,
+				96AD3DE77E3AD0E756D1757C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		4BCA7018579131996398336F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC90E6B7F72C98EE0A63A1A2 /* Pods_Netflicks.framework */,
+				462B3FD8FA9767159F11EF87 /* Pods_NetflicksTests.framework */,
+				AF73D3B72C87DF443F2A51E8 /* YouTubePlayer.framework */,
+				78F49611C740AA42327FC6BF /* YouTubePlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F5DACA3D0A1DF84F3C9E63B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE67B977F00F21A32353FFC0 /* YouTubePlayer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6CE472D6D10BF21B9D10272A /* Pods-Netflicks */ = {
+			isa = PBXGroup;
+			children = (
+				9DA1D5D612197CA149E5E35B /* Info.plist */,
+				83F559CD1DDF56B4F9D582B2 /* Pods-Netflicks.modulemap */,
+				1FCDB766EF47797D87E35474 /* Pods-Netflicks-acknowledgements.markdown */,
+				177FC48D0C48FF3E67B991A3 /* Pods-Netflicks-acknowledgements.plist */,
+				B13C4F38151E1A9BB18F5656 /* Pods-Netflicks-dummy.m */,
+				C1EDF6DB7FE740E26D3BA29B /* Pods-Netflicks-environment.h */,
+				F4681F1381721B0721EDBB23 /* Pods-Netflicks-frameworks.sh */,
+				766355ECF9612264BED70B77 /* Pods-Netflicks-resources.sh */,
+				58340B8634D553C7D170E472 /* Pods-Netflicks-umbrella.h */,
+				158E65E31C87ADC5D3603F9E /* Pods-Netflicks.debug.xcconfig */,
+				6830EC7A4EBD8206D1A96AD2 /* Pods-Netflicks.release.xcconfig */,
+			);
+			name = "Pods-Netflicks";
+			path = "Target Support Files/Pods-Netflicks";
+			sourceTree = "<group>";
+		};
+		6E74FC1E0E58DCECF4F640B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95A336368A0D2717B5BFA052 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90912A5572882E1830E8AD69 /* Pods-NetflicksTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CF29F44FAC0786E61445C69 /* Info.plist */,
+				B3E1949B152DAC11B1EF7C51 /* Pods-NetflicksTests.modulemap */,
+				DA2CD9E8A7DF42B9D5F8B233 /* Pods-NetflicksTests-acknowledgements.markdown */,
+				901AAE518DCFFE429E044CE5 /* Pods-NetflicksTests-acknowledgements.plist */,
+				D90EBFF0C465BE5485845B60 /* Pods-NetflicksTests-dummy.m */,
+				D0868DF4226D65D06B002395 /* Pods-NetflicksTests-environment.h */,
+				294BD6AF2D01191BA5A98935 /* Pods-NetflicksTests-frameworks.sh */,
+				87732F59C75C8C7BD1A2CD9F /* Pods-NetflicksTests-resources.sh */,
+				A1D1AD833B2B5C4FCEBD091F /* Pods-NetflicksTests-umbrella.h */,
+				6BA21797A1E6ADF74DE69F69 /* Pods-NetflicksTests.debug.xcconfig */,
+				5C7D37D7793FEEFFD3CB0FD3 /* Pods-NetflicksTests.release.xcconfig */,
+			);
+			name = "Pods-NetflicksTests";
+			path = "Target Support Files/Pods-NetflicksTests";
+			sourceTree = "<group>";
+		};
+		95A336368A0D2717B5BFA052 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				94EBD68400DE5D0FA3671E6A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		96AD3DE77E3AD0E756D1757C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CE472D6D10BF21B9D10272A /* Pods-Netflicks */,
+				90912A5572882E1830E8AD69 /* Pods-NetflicksTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EE67B977F00F21A32353FFC0 /* YouTubePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				05CB08C90503AB0BA492C2E5 /* YouTubePlayer.swift */,
+				0206F8EE1B69535A00023A58 /* YTPlayer.html */,
+				28F2F4BFA8C1D862435EBA2E /* Support Files */,
+			);
+			path = YouTubePlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1006292753FBCC683F477498 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B2247213FF274E0FC8FD6B /* Pods-NetflicksTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66E3A1370D2B349E45859E4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA0E50AA9A1075D8ACE94D0 /* Pods-Netflicks-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A962E8632A8735A5D4ED96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FDEF7391E399C7677A8ED /* Pods-NetflicksTests-YouTubePlayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE65FD5AD0E729F39972493 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EDB5ECEFF81D9E230DD12E6 /* Pods-Netflicks-YouTubePlayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22CBEEAD4A07708BBD79233B /* Pods-NetflicksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D13482BDA130776A00D658C /* Build configuration list for PBXNativeTarget "Pods-NetflicksTests" */;
+			buildPhases = (
+				8F25370ED307B71EFBA27806 /* Sources */,
+				466D2A00D835A02641CB0F04 /* Frameworks */,
+				1006292753FBCC683F477498 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46102AEFDB6FF62AB8EBAF30 /* PBXTargetDependency */,
+			);
+			name = "Pods-NetflicksTests";
+			productName = "Pods-NetflicksTests";
+			productReference = 462B3FD8FA9767159F11EF87 /* Pods_NetflicksTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		266BAF5A3D36DA251BCA3E67 /* Pods-Netflicks-YouTubePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F769D3A476600C93B4B0AD /* Build configuration list for PBXNativeTarget "Pods-Netflicks-YouTubePlayer" */;
+			buildPhases = (
+				3D5932D2E3500D7E84D3BECA /* Sources */,
+				378139F74912DBC00FC8DF45 /* Frameworks */,
+				ECE65FD5AD0E729F39972493 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Netflicks-YouTubePlayer";
+			productName = "Pods-Netflicks-YouTubePlayer";
+			productReference = 78F49611C740AA42327FC6BF /* YouTubePlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA7E32EABCEEC62B83F6624C /* Pods-Netflicks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B05D2425E6D447F1E525E7 /* Build configuration list for PBXNativeTarget "Pods-Netflicks" */;
+			buildPhases = (
+				A0B9A53C62B7331AFF6E8F9B /* Sources */,
+				781286B6E562D44D91A6B689 /* Frameworks */,
+				66E3A1370D2B349E45859E4B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A01BA456786C8B97BE97C8A /* PBXTargetDependency */,
+			);
+			name = "Pods-Netflicks";
+			productName = "Pods-Netflicks";
+			productReference = EC90E6B7F72C98EE0A63A1A2 /* Pods_Netflicks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB8E4397E5F30B9BE838F3CB /* Pods-NetflicksTests-YouTubePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F08CB6BC4F7FE556CF87B7A /* Build configuration list for PBXNativeTarget "Pods-NetflicksTests-YouTubePlayer" */;
+			buildPhases = (
+				ACE20E78797DB4699C167E0C /* Sources */,
+				0937801E9D56231C0D96D29F /* Frameworks */,
+				A1A962E8632A8735A5D4ED96 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NetflicksTests-YouTubePlayer";
+			productName = "Pods-NetflicksTests-YouTubePlayer";
+			productReference = AF73D3B72C87DF443F2A51E8 /* YouTubePlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC0D2356CBCDFBBA594DF6B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = AA981F62AE6A4796496FA229 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A8E1CD49F1E2D6EF2F3C5D0;
+			productRefGroup = 4BCA7018579131996398336F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7E32EABCEEC62B83F6624C /* Pods-Netflicks */,
+				266BAF5A3D36DA251BCA3E67 /* Pods-Netflicks-YouTubePlayer */,
+				22CBEEAD4A07708BBD79233B /* Pods-NetflicksTests */,
+				FB8E4397E5F30B9BE838F3CB /* Pods-NetflicksTests-YouTubePlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D5932D2E3500D7E84D3BECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E173EEBF8E843C9CC3E0382 /* Pods-Netflicks-YouTubePlayer-dummy.m in Sources */,
+				568A801AADF9827BAF305979 /* YouTubePlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F25370ED307B71EFBA27806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563B9CC91415D9922B189D15 /* Pods-NetflicksTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B9A53C62B7331AFF6E8F9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF150D105E2577892701B493 /* Pods-Netflicks-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE20E78797DB4699C167E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F865E39CB6A1B1064FC4AE /* Pods-NetflicksTests-YouTubePlayer-dummy.m in Sources */,
+				CFA9F4378993F0BCD44C38B3 /* YouTubePlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46102AEFDB6FF62AB8EBAF30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NetflicksTests-YouTubePlayer";
+			target = FB8E4397E5F30B9BE838F3CB /* Pods-NetflicksTests-YouTubePlayer */;
+			targetProxy = 87E762CB27CED96D96D18777 /* PBXContainerItemProxy */;
+		};
+		4A01BA456786C8B97BE97C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Netflicks-YouTubePlayer";
+			target = 266BAF5A3D36DA251BCA3E67 /* Pods-Netflicks-YouTubePlayer */;
+			targetProxy = A61880787825FD2834487FB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FB4622E05746C20A00929B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6830EC7A4EBD8206D1A96AD2 /* Pods-Netflicks.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Netflicks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Netflicks/Pods-Netflicks.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Netflicks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		325B803DE2711E4D9E2D492E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158E65E31C87ADC5D3603F9E /* Pods-Netflicks.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Netflicks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Netflicks/Pods-Netflicks.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Netflicks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B7AC1630A78E8E6E17226C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7D37D7793FEEFFD3CB0FD3 /* Pods-NetflicksTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetflicksTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NetflicksTests/Pods-NetflicksTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NetflicksTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D13DE28EC82A143F5D47B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A961E85A24F80F71F17262 /* Pods-NetflicksTests-YouTubePlayer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NetflicksTests-YouTubePlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YouTubePlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5931293C990F0A7BF5F68153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A961E85A24F80F71F17262 /* Pods-NetflicksTests-YouTubePlayer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-NetflicksTests-YouTubePlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NetflicksTests-YouTubePlayer/Pods-NetflicksTests-YouTubePlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YouTubePlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F3AB4634794C8920C2ECEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006BA413BCC5D6EAD0F16163 /* Pods-Netflicks-YouTubePlayer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Netflicks-YouTubePlayer/Pods-Netflicks-YouTubePlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Netflicks-YouTubePlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Netflicks-YouTubePlayer/Pods-Netflicks-YouTubePlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YouTubePlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E58B79EC164D47110DFB512 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006BA413BCC5D6EAD0F16163 /* Pods-Netflicks-YouTubePlayer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Netflicks-YouTubePlayer/Pods-Netflicks-YouTubePlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Netflicks-YouTubePlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Netflicks-YouTubePlayer/Pods-Netflicks-YouTubePlayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YouTubePlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A04DDABDC6726DB70F07AE8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA21797A1E6ADF74DE69F69 /* Pods-NetflicksTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetflicksTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-NetflicksTests/Pods-NetflicksTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_NetflicksTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C09DF1A6564ED4184C18A866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD47FBCF042D361C191E74CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B05D2425E6D447F1E525E7 /* Build configuration list for PBXNativeTarget "Pods-Netflicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				325B803DE2711E4D9E2D492E /* Debug */,
+				2FB4622E05746C20A00929B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F769D3A476600C93B4B0AD /* Build configuration list for PBXNativeTarget "Pods-Netflicks-YouTubePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3AB4634794C8920C2ECEBB /* Debug */,
+				7E58B79EC164D47110DFB512 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F08CB6BC4F7FE556CF87B7A /* Build configuration list for PBXNativeTarget "Pods-NetflicksTests-YouTubePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5931293C990F0A7BF5F68153 /* Debug */,
+				3D13DE28EC82A143F5D47B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D13482BDA130776A00D658C /* Build configuration list for PBXNativeTarget "Pods-NetflicksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04DDABDC6726DB70F07AE8C /* Debug */,
+				3B7AC1630A78E8E6E17226C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA981F62AE6A4796496FA229 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09DF1A6564ED4184C18A866 /* Debug */,
+				CD47FBCF042D361C191E74CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC0D2356CBCDFBBA594DF6B7 /* Project object */;
+}

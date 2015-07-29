@@ -7,35 +7,45 @@
 //
 
 import UIKit
+import YouTubePlayer
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, YouTubePlayerDelegate {
 
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var playerView: YouTubePlayerView!
+    @IBOutlet weak var playButton: UIButton!
     
     var url: NSURL!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        var request = NSURLRequest(URL: url!)
-        
-        webView.loadRequest(request)
-        // Do any additional setup after loading the view.
+    //so it is able to play as soon as video loads
+    func playerReady(videoPlayer: YouTubePlayerView) {
+        playerView.play()
+        playButton.setTitle("Pause", forState: .Normal)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //setting up the video
+        playerView.playerVars = ["playsinline": "1"]
+        playerView.loadVideoURL(url!)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func playButtonPressed(sender: AnyObject) {
+        if playerView.ready {
+            if playerView.playerState != YouTubePlayerState.Playing {
+                playerView.play()
+                playButton.setTitle("Pause", forState: .Normal)
+            } else {
+                playerView.pause()
+                playButton.setTitle("Play", forState: .Normal)
+            }
+        }
     }
-    */
-
+    
+    //noted by the author that these methods should be optional in the delegate
+    func playerStateChanged(videoPlayer: YouTubePlayerView, playerState: YouTubePlayerState) {
+    }
+    func playerQualityChanged(videoPlayer: YouTubePlayerView, playbackQuality: YouTubePlaybackQuality) {
+    }
 }

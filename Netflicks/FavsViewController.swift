@@ -38,7 +38,7 @@ class FavsViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return favoriteShowTitlesList.count
+        return favoriteShowTitlesList == nil ? 0 : count(favoriteShowTitlesList)
     }
     
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {

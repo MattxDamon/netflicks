@@ -18,6 +18,10 @@
 		0206F8E71B692DE300023A58 /* FavsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0206F8E31B692DE300023A58 /* FavsViewController.swift */; };
 		0206F8EA1B692DED00023A58 /* PicturesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0206F8E81B692DED00023A58 /* PicturesTableViewController.swift */; };
 		0206F8EB1B692DED00023A58 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0206F8E91B692DED00023A58 /* WebViewController.swift */; };
+		02AE9E901B6955750082E29E /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 02AE9E8F1B6955750082E29E /* YTPlayer.html */; };
+		02AE9E941B69595F0082E29E /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AE9E931B69595F0082E29E /* WikiViewController.swift */; };
+		33C43A49153ECA0D1B150CAB /* Pods_NetflicksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2BDD9299332288E4C66E62 /* Pods_NetflicksTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8E72A4F7A7BE3632B9511FEB /* Pods_Netflicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8151DA6866DBAA79F6FB37 /* Pods_Netflicks.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,14 @@
 		0206F8E31B692DE300023A58 /* FavsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavsViewController.swift; sourceTree = "<group>"; };
 		0206F8E81B692DED00023A58 /* PicturesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesTableViewController.swift; sourceTree = "<group>"; };
 		0206F8E91B692DED00023A58 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		02AE9E8F1B6955750082E29E /* YTPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YTPlayer.html; sourceTree = "<group>"; };
+		02AE9E931B69595F0082E29E /* WikiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		0AA8950D282F73F092555F4A /* Pods-Netflicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netflicks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Netflicks/Pods-Netflicks.release.xcconfig"; sourceTree = "<group>"; };
+		6813931C68BF3E2048AED189 /* Pods-Netflicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netflicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Netflicks/Pods-Netflicks.debug.xcconfig"; sourceTree = "<group>"; };
+		80ED9C09BC58DEF89C4B99BF /* Pods-NetflicksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflicksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetflicksTests/Pods-NetflicksTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE8151DA6866DBAA79F6FB37 /* Pods_Netflicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netflicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C50B1A4AA8927F2AB82062B5 /* Pods-NetflicksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflicksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetflicksTests/Pods-NetflicksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE2BDD9299332288E4C66E62 /* Pods_NetflicksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflicksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E72A4F7A7BE3632B9511FEB /* Pods_Netflicks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C43A49153ECA0D1B150CAB /* Pods_NetflicksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,8 @@
 				0206F8B91B692C4300023A58 /* Netflicks */,
 				0206F8CF1B692C4300023A58 /* NetflicksTests */,
 				0206F8B81B692C4300023A58 /* Products */,
+				E930AD8B08B839FCBA12B9F6 /* Pods */,
+				E6367F970D1C1473D8EDDBFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +108,7 @@
 				0206F8E81B692DED00023A58 /* PicturesTableViewController.swift */,
 				0206F8E91B692DED00023A58 /* WebViewController.swift */,
 				0206F8E11B692DE300023A58 /* dataModel.swift */,
+				02AE9E931B69595F0082E29E /* WikiViewController.swift */,
 				0206F8E21B692DE300023A58 /* DetailViewController.swift */,
 				0206F8E31B692DE300023A58 /* FavsViewController.swift */,
 				0206F8DC1B692D7500023A58 /* Main.storyboard */,
@@ -105,6 +122,7 @@
 		0206F8BA1B692C4300023A58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				02AE9E8F1B6955750082E29E /* YTPlayer.html */,
 				0206F8BB1B692C4300023A58 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -127,6 +145,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E6367F970D1C1473D8EDDBFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE8151DA6866DBAA79F6FB37 /* Pods_Netflicks.framework */,
+				DE2BDD9299332288E4C66E62 /* Pods_NetflicksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E930AD8B08B839FCBA12B9F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6813931C68BF3E2048AED189 /* Pods-Netflicks.debug.xcconfig */,
+				0AA8950D282F73F092555F4A /* Pods-Netflicks.release.xcconfig */,
+				C50B1A4AA8927F2AB82062B5 /* Pods-NetflicksTests.debug.xcconfig */,
+				80ED9C09BC58DEF89C4B99BF /* Pods-NetflicksTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0206F8D61B692C4300023A58 /* Build configuration list for PBXNativeTarget "Netflicks" */;
 			buildPhases = (
+				831A92791BC5C8CC472971D4 /* Check Pods Manifest.lock */,
 				0206F8B31B692C4300023A58 /* Sources */,
 				0206F8B41B692C4300023A58 /* Frameworks */,
 				0206F8B51B692C4300023A58 /* Resources */,
+				26486194AF5CC9E5E920045F /* Embed Pods Frameworks */,
+				96456009497A41EEDAD1A086 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0206F8D91B692C4300023A58 /* Build configuration list for PBXNativeTarget "NetflicksTests" */;
 			buildPhases = (
+				6252F41C4E9A0BE07B485BBD /* Check Pods Manifest.lock */,
 				0206F8C81B692C4300023A58 /* Sources */,
 				0206F8C91B692C4300023A58 /* Frameworks */,
 				0206F8CA1B692C4300023A58 /* Resources */,
+				5A97EA0677CADAEED146A5B0 /* Embed Pods Frameworks */,
+				C6BFFB7029A7EA18D4C01017 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +253,7 @@
 			files = (
 				0206F8C71B692C4300023A58 /* LaunchScreen.xib in Resources */,
 				0206F8C41B692C4300023A58 /* Images.xcassets in Resources */,
+				02AE9E901B6955750082E29E /* YTPlayer.html in Resources */,
 				0206F8DD1B692D7500023A58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,11 +267,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26486194AF5CC9E5E920045F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Netflicks/Pods-Netflicks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A97EA0677CADAEED146A5B0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetflicksTests/Pods-NetflicksTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6252F41C4E9A0BE07B485BBD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		831A92791BC5C8CC472971D4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96456009497A41EEDAD1A086 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Netflicks/Pods-Netflicks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6BFFB7029A7EA18D4C01017 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetflicksTests/Pods-NetflicksTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0206F8B31B692C4300023A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AE9E941B69595F0082E29E /* WikiViewController.swift in Sources */,
 				0206F8EA1B692DED00023A58 /* PicturesTableViewController.swift in Sources */,
 				0206F8E41B692DE300023A58 /* CustomTableViewCell.swift in Sources */,
 				0206F8E51B692DE300023A58 /* dataModel.swift in Sources */,
@@ -350,6 +489,7 @@
 		};
 		0206F8D71B692C4300023A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6813931C68BF3E2048AED189 /* Pods-Netflicks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Netflicks/Info.plist;
@@ -360,6 +500,7 @@
 		};
 		0206F8D81B692C4300023A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA8950D282F73F092555F4A /* Pods-Netflicks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Netflicks/Info.plist;
@@ -370,6 +511,7 @@
 		};
 		0206F8DA1B692C4300023A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C50B1A4AA8927F2AB82062B5 /* Pods-NetflicksTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -389,6 +531,7 @@
 		};
 		0206F8DB1B692C4300023A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80ED9C09BC58DEF89C4B99BF /* Pods-NetflicksTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -65,14 +65,27 @@ class DetailViewController: UIViewController {
     }
     
     func sendToWikipedia() {
-        performSegueWithIdentifier("showWeb", sender: self)
+        performSegueWithIdentifier("showWiki", sender: self)
+    }
+    
+    func sendToTube() {
+        performSegueWithIdentifier("showTube", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showWeb" {
-            let webViewController = segue.destinationViewController as! WebViewController
+        if segue.identifier == "showWiki" {
+            let webViewController = segue.destinationViewController as! WikiViewController
             webViewController.url = detailShow.url
         }
+        if segue.identifier == "showTube" {
+            let tubeViewController = segue.destinationViewController as! WebViewController
+            tubeViewController.url = detailShow.tubeUrl
+        }
+    }
+    
+    
+    @IBAction func tubeBtnClicked(sender: AnyObject) {
+        sendToTube()
     }
 
     @IBAction func webBtnClicked(sender: AnyObject) {

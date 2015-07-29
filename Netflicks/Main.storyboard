@@ -41,6 +41,15 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWE-qL-Unq">
+                                <rect key="frame" x="96" y="480" width="128" height="30"/>
+                                <state key="normal" title="Watch The Trailer">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tubeBtnClicked:" destination="3y0-j2-thf" eventType="touchUpInside" id="Ffh-Zj-ULQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -51,12 +60,15 @@
                             <constraint firstItem="WLp-a1-aZH" firstAttribute="leading" secondItem="qWJ-Vp-JKP" secondAttribute="leadingMargin" constant="26" id="BB8-d9-V4k"/>
                             <constraint firstItem="63f-gs-xyR" firstAttribute="leading" secondItem="qWJ-Vp-JKP" secondAttribute="leadingMargin" constant="29" id="C19-T3-mOt"/>
                             <constraint firstItem="XC0-XX-Q1W" firstAttribute="top" secondItem="MeB-B1-dIk" secondAttribute="bottom" constant="13" id="Cpt-LW-W3y"/>
+                            <constraint firstItem="lIK-nH-5Dq" firstAttribute="top" secondItem="rWE-qL-Unq" secondAttribute="bottom" constant="8" id="DFX-Nf-CIH"/>
                             <constraint firstItem="1A9-Ey-gTC" firstAttribute="top" secondItem="lIK-nH-5Dq" secondAttribute="bottom" constant="20" id="Drr-W1-eHn"/>
+                            <constraint firstItem="rWE-qL-Unq" firstAttribute="leading" secondItem="qWJ-Vp-JKP" secondAttribute="leadingMargin" constant="80" id="IZn-ud-S5g"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lIK-nH-5Dq" secondAttribute="trailing" constant="80" id="P8U-T6-hEJ"/>
+                            <constraint firstItem="rWE-qL-Unq" firstAttribute="top" secondItem="WLp-a1-aZH" secondAttribute="bottom" constant="20" id="XLs-Er-0EE"/>
                             <constraint firstItem="WLp-a1-aZH" firstAttribute="top" secondItem="63f-gs-xyR" secondAttribute="bottom" constant="27" id="ezs-vj-bIK"/>
-                            <constraint firstItem="lIK-nH-5Dq" firstAttribute="top" secondItem="WLp-a1-aZH" secondAttribute="bottom" constant="58" id="gvB-5j-Uir"/>
                             <constraint firstItem="XC0-XX-Q1W" firstAttribute="leading" secondItem="qWJ-Vp-JKP" secondAttribute="leadingMargin" constant="29" id="hQU-P8-TEa"/>
                             <constraint firstItem="lIK-nH-5Dq" firstAttribute="leading" secondItem="qWJ-Vp-JKP" secondAttribute="leadingMargin" constant="80" id="jl7-dr-sUA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rWE-qL-Unq" secondAttribute="trailing" constant="80" id="yyU-Lr-mfq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jaj-hb-Avb"/>
@@ -64,12 +76,13 @@
                         <outlet property="descriptionLabel" destination="WLp-a1-aZH" id="2py-7f-48G"/>
                         <outlet property="imageView" destination="XC0-XX-Q1W" id="evM-gz-vcr"/>
                         <outlet property="titleLabel" destination="63f-gs-xyR" id="LSg-xx-dOk"/>
-                        <segue destination="hUX-Jx-8ix" kind="push" identifier="showWeb" id="phS-YT-FUg"/>
+                        <segue destination="hUX-Jx-8ix" kind="push" identifier="showTube" id="pXU-a8-o0K"/>
+                        <segue destination="bDS-Dg-2gr" kind="push" identifier="showWiki" id="igf-HC-60Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRT-g5-HP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853" y="342"/>
+            <point key="canvasLocation" x="1882" y="398"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Wt0-Px-4DT">
@@ -83,24 +96,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bgy-LV-Itu">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oq1-RZ-Akt" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="64" width="320" height="251"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="GYu-Pd-Rze"/>
+                                    <constraint firstAttribute="width" constant="320" id="wmB-2v-tR1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-et-FP2">
+                                <rect key="frame" x="105" y="344" width="110" height="35"/>
+                                <color key="backgroundColor" red="0.76678145559999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Play Trailer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="hUX-Jx-8ix" eventType="touchUpInside" id="j2h-qt-tIx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="oq1-RZ-Akt" secondAttribute="centerX" id="pyU-nK-GQL"/>
+                            <constraint firstItem="g4X-et-FP2" firstAttribute="top" secondItem="oq1-RZ-Akt" secondAttribute="bottom" constant="29" id="xE5-Xx-VCc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WMt-kc-XJ8"/>
+                    <connections>
+                        <outlet property="playButton" destination="g4X-et-FP2" id="sJc-q2-Z0J"/>
+                        <outlet property="playerView" destination="oq1-RZ-Akt" id="p9K-aB-DRJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIO-Xz-LjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2335" y="178"/>
+        </scene>
+        <!--Wiki View Controller-->
+        <scene sceneID="YFL-8r-iGh">
+            <objects>
+                <viewController id="bDS-Dg-2gr" customClass="WikiViewController" customModule="Netflicks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sEa-En-aFj"/>
+                        <viewControllerLayoutGuide type="bottom" id="65i-1K-9OD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lYo-aN-hZM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YYQ-ek-4Ji">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="delegate" destination="hUX-Jx-8ix" id="kxK-B7-Tpt"/>
+                                    <outlet property="delegate" destination="bDS-Dg-2gr" id="mIe-TD-kxO"/>
                                 </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WMt-kc-XJ8"/>
+                    <navigationItem key="navigationItem" id="1wa-HH-D2r"/>
                     <connections>
-                        <outlet property="webView" destination="bgy-LV-Itu" id="raA-AV-g1k"/>
+                        <outlet property="webView" destination="YYQ-ek-4Ji" id="CSJ-Ee-0xn"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GIO-Xz-LjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YID-JW-6Ov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2263" y="342"/>
+            <point key="canvasLocation" x="2335" y="813"/>
         </scene>
         <!--Netflicks-->
         <scene sceneID="PEe-6B-S0m">

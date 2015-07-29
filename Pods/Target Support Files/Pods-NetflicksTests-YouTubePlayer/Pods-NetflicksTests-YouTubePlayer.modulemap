@@ -1,0 +1,6 @@
+framework module YouTubePlayer {
+  umbrella header "Pods-NetflicksTests-YouTubePlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

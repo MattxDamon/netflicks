@@ -23,10 +23,12 @@ class show {
     var imagePath: UIImage!
     var title: String!
     var comments: String!
+    var tubeUrl: NSURL? = nil
     
-    init (type: categoryType, featureFilm: Bool, url: String, imagePath: UIImage, title: String, comments: String) {
+    init (type: categoryType, featureFilm: Bool, url: String, tubeUrl: String, imagePath: UIImage, title: String, comments: String) {
         self.type = type
         self.url = NSURL(string: url)
+        self.tubeUrl = NSURL(string: tubeUrl)
         self.imagePath = imagePath
         self.title = title
         self.comments = comments
