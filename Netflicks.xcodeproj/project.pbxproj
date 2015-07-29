@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0206F8BD1B692C4300023A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0206F8BC1B692C4300023A58 /* AppDelegate.swift */; };
+		0206F8BF1B692C4300023A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0206F8BE1B692C4300023A58 /* ViewController.swift */; };
+		0206F8C21B692C4300023A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0206F8C01B692C4300023A58 /* Main.storyboard */; };
+		0206F8C41B692C4300023A58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0206F8C31B692C4300023A58 /* Images.xcassets */; };
+		0206F8C71B692C4300023A58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0206F8C51B692C4300023A58 /* LaunchScreen.xib */; };
+		0206F8D31B692C4300023A58 /* NetflicksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0206F8D21B692C4300023A58 /* NetflicksTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0206F8CD1B692C4300023A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0206F8AF1B692C4300023A58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0206F8B61B692C4300023A58;
+			remoteInfo = Netflicks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0206F8B71B692C4300023A58 /* Netflicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0206F8BB1B692C4300023A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0206F8BC1B692C4300023A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0206F8BE1B692C4300023A58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0206F8C11B692C4300023A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0206F8C31B692C4300023A58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0206F8C61B692C4300023A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0206F8CC1B692C4300023A58 /* NetflicksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetflicksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0206F8D11B692C4300023A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0206F8D21B692C4300023A58 /* NetflicksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflicksTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0206F8B41B692C4300023A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0206F8C91B692C4300023A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0206F8AE1B692C4300023A58 = {
+			isa = PBXGroup;
+			children = (
+				0206F8B91B692C4300023A58 /* Netflicks */,
+				0206F8CF1B692C4300023A58 /* NetflicksTests */,
+				0206F8B81B692C4300023A58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0206F8B81B692C4300023A58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0206F8B71B692C4300023A58 /* Netflicks.app */,
+				0206F8CC1B692C4300023A58 /* NetflicksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0206F8B91B692C4300023A58 /* Netflicks */ = {
+			isa = PBXGroup;
+			children = (
+				0206F8BC1B692C4300023A58 /* AppDelegate.swift */,
+				0206F8BE1B692C4300023A58 /* ViewController.swift */,
+				0206F8C01B692C4300023A58 /* Main.storyboard */,
+				0206F8C31B692C4300023A58 /* Images.xcassets */,
+				0206F8C51B692C4300023A58 /* LaunchScreen.xib */,
+				0206F8BA1B692C4300023A58 /* Supporting Files */,
+			);
+			path = Netflicks;
+			sourceTree = "<group>";
+		};
+		0206F8BA1B692C4300023A58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0206F8BB1B692C4300023A58 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0206F8CF1B692C4300023A58 /* NetflicksTests */ = {
+			isa = PBXGroup;
+			children = (
+				0206F8D21B692C4300023A58 /* NetflicksTests.swift */,
+				0206F8D01B692C4300023A58 /* Supporting Files */,
+			);
+			path = NetflicksTests;
+			sourceTree = "<group>";
+		};
+		0206F8D01B692C4300023A58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0206F8D11B692C4300023A58 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0206F8B61B692C4300023A58 /* Netflicks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0206F8D61B692C4300023A58 /* Build configuration list for PBXNativeTarget "Netflicks" */;
+			buildPhases = (
+				0206F8B31B692C4300023A58 /* Sources */,
+				0206F8B41B692C4300023A58 /* Frameworks */,
+				0206F8B51B692C4300023A58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Netflicks;
+			productName = Netflicks;
+			productReference = 0206F8B71B692C4300023A58 /* Netflicks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0206F8CB1B692C4300023A58 /* NetflicksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0206F8D91B692C4300023A58 /* Build configuration list for PBXNativeTarget "NetflicksTests" */;
+			buildPhases = (
+				0206F8C81B692C4300023A58 /* Sources */,
+				0206F8C91B692C4300023A58 /* Frameworks */,
+				0206F8CA1B692C4300023A58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0206F8CE1B692C4300023A58 /* PBXTargetDependency */,
+			);
+			name = NetflicksTests;
+			productName = NetflicksTests;
+			productReference = 0206F8CC1B692C4300023A58 /* NetflicksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0206F8AF1B692C4300023A58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Matthew Barth";
+				TargetAttributes = {
+					0206F8B61B692C4300023A58 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					0206F8CB1B692C4300023A58 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 0206F8B61B692C4300023A58;
+					};
+				};
+			};
+			buildConfigurationList = 0206F8B21B692C4300023A58 /* Build configuration list for PBXProject "Netflicks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0206F8AE1B692C4300023A58;
+			productRefGroup = 0206F8B81B692C4300023A58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0206F8B61B692C4300023A58 /* Netflicks */,
+				0206F8CB1B692C4300023A58 /* NetflicksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0206F8B51B692C4300023A58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0206F8C21B692C4300023A58 /* Main.storyboard in Resources */,
+				0206F8C71B692C4300023A58 /* LaunchScreen.xib in Resources */,
+				0206F8C41B692C4300023A58 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0206F8CA1B692C4300023A58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0206F8B31B692C4300023A58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0206F8BF1B692C4300023A58 /* ViewController.swift in Sources */,
+				0206F8BD1B692C4300023A58 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0206F8C81B692C4300023A58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0206F8D31B692C4300023A58 /* NetflicksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0206F8CE1B692C4300023A58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0206F8B61B692C4300023A58 /* Netflicks */;
+			targetProxy = 0206F8CD1B692C4300023A58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0206F8C01B692C4300023A58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0206F8C11B692C4300023A58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0206F8C51B692C4300023A58 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0206F8C61B692C4300023A58 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0206F8D41B692C4300023A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0206F8D51B692C4300023A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0206F8D71B692C4300023A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Netflicks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0206F8D81B692C4300023A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Netflicks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0206F8DA1B692C4300023A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NetflicksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netflicks.app/Netflicks";
+			};
+			name = Debug;
+		};
+		0206F8DB1B692C4300023A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NetflicksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netflicks.app/Netflicks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0206F8B21B692C4300023A58 /* Build configuration list for PBXProject "Netflicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0206F8D41B692C4300023A58 /* Debug */,
+				0206F8D51B692C4300023A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0206F8D61B692C4300023A58 /* Build configuration list for PBXNativeTarget "Netflicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0206F8D71B692C4300023A58 /* Debug */,
+				0206F8D81B692C4300023A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0206F8D91B692C4300023A58 /* Build configuration list for PBXNativeTarget "NetflicksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0206F8DA1B692C4300023A58 /* Debug */,
+				0206F8DB1B692C4300023A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0206F8AF1B692C4300023A58 /* Project object */;
+}
