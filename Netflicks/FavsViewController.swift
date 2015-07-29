@@ -10,7 +10,8 @@ import UIKit
 
 class FavsViewController: UITableViewController {
     
-        var favoriteShowTitlesList: [String]!
+    var favoriteShowTitlesList: [String]!
+    var sendToDetail:( (title: String) -> ())!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +70,12 @@ class FavsViewController: UITableViewController {
             NSUserDefaults.standardUserDefaults().setObject(favoriteShowTitlesList, forKey: "favs")
             tableView.reloadData()
         }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.cellForRowAtIndexPath(indexPath)
+        let title = cell?.textLabel?.text
+        sendToDetail(title: title!)
     }
 
 

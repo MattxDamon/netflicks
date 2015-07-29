@@ -9,9 +9,9 @@
 import UIKit
 
 //TODOS: (and this is it...)
-//let user add shows to their favorites from the detail view using realm
+//Xlet user add shows to their favorites from the detail view using realm
 
-//let user save which season/episode they are on for each show in the favorites section, if it is a film let them input whether they have seen it or not
+//Xlet user save which season/episode they are on for each show in the favorites section, if it is a film let them input whether they have seen it or not
 //Xnetwork to show a webpage for each show or something from the detail view page
 //add trailer player instead of wikipedia bullshit dude
 //if already in favs when you go to the detail set a value to true and make it red and allow user to remove from favs right there too
@@ -96,6 +96,12 @@ class PicturesTableViewController: UITableViewController {
         return 1
     }
     
+    func favSendToDetail(title: String) {
+        //going through the shows to find the title selected in fav controller, only gonna be one, but it'll be there
+        let detailShow = shows.filter { $0.title == title }
+        sendToDetail(detailShow[0])
+    }
+    
     func sendToDetail(sender: show) {
         self.indexShow = sender
         performSegueWithIdentifier("showDetail", sender: self)
@@ -139,7 +145,7 @@ class PicturesTableViewController: UITableViewController {
         if segue.identifier == "showFavs" {
             //configure favs controller
             let favsController = segue.destinationViewController as! FavsViewController
-            favsController.detailShow = indexShow
+            favsController.sendToDetail = favSendToDetail
         }
     }
 }
