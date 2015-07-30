@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     var detailShow: show!
     var favorites: UIBarButtonItem!
     var favoriteShowTitlesList: [String]!
+    var updatedShowTitlesList: [String]!
 
     
     override func viewDidLoad() {
@@ -42,16 +43,24 @@ class DetailViewController: UIViewController {
     }
     
     func favoritesTapped() {
-        //update dat bish
-        if favoriteShowTitlesList != nil {
-            favoriteShowTitlesList.append(detailShow.title)
+        //Add if not fav, remove if fav
+        if favorites.tintColor == hexStringToUIColor("#5B615B") {
+            //update dat bish
+            if favoriteShowTitlesList != nil {
+                favoriteShowTitlesList.append(detailShow.title)
+            } else {
+                favoriteShowTitlesList = [detailShow.title]
+            }
+            NSUserDefaults.standardUserDefaults().setObject(favoriteShowTitlesList, forKey: "favs")
+            self.alertShow("Favorite Added", alertMessage: "U like??")
+            favorites.tintColor = hexStringToUIColor("#C40000")
         } else {
-            favoriteShowTitlesList = [detailShow.title]
+            //remove dat shi
+            updatedShowTitlesList = favoriteShowTitlesList.filter() { $0 != self.detailShow.title }
+            NSUserDefaults.standardUserDefaults().setObject(updatedShowTitlesList, forKey: "favs")
+            self.alertShow("Favorite Removed", alertMessage: "Not a fan, huh?")
+            favorites.tintColor = hexStringToUIColor("#5B615B")
         }
-        NSUserDefaults.standardUserDefaults().setObject(favoriteShowTitlesList, forKey: "favs")
-        
-        self.alertShow("Favorite Added", alertMessage: "U Rike??")
-        favorites.tintColor = hexStringToUIColor("#C40000")
     }
     
     //I just have this clipboarded as a function, makes it easier in some projects
