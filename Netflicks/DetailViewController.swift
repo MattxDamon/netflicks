@@ -17,7 +17,6 @@ class DetailViewController: UIViewController {
     var detailShow: show!
     var favorites: UIBarButtonItem!
     var favoriteShowTitlesList: [String]!
-    var updatedShowTitlesList: [String]!
 
     
     override func viewDidLoad() {
@@ -56,8 +55,8 @@ class DetailViewController: UIViewController {
             favorites.tintColor = hexStringToUIColor("#C40000")
         } else {
             //remove dat shi
-            updatedShowTitlesList = favoriteShowTitlesList.filter() { $0 != self.detailShow.title }
-            NSUserDefaults.standardUserDefaults().setObject(updatedShowTitlesList, forKey: "favs")
+            favoriteShowTitlesList = favoriteShowTitlesList.filter() { $0 != self.detailShow.title }
+            NSUserDefaults.standardUserDefaults().setObject(favoriteShowTitlesList, forKey: "favs")
             self.alertShow("Favorite Removed", alertMessage: "Not a fan, huh?")
             favorites.tintColor = hexStringToUIColor("#5B615B")
         }

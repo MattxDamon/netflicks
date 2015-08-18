@@ -21,6 +21,16 @@ class FavsViewController: UITableViewController {
             favoriteShowTitlesList = NSUserDefaults.standardUserDefaults().objectForKey("favs") as! [String]
         }
     }
+  
+  func viewDidAppear() {
+    super.viewDidAppear(true)
+    favoriteShowTitlesList = nil
+    
+    //gather the favs!
+    if NSUserDefaults.standardUserDefaults().objectForKey("favs") != nil {
+      favoriteShowTitlesList = NSUserDefaults.standardUserDefaults().objectForKey("favs") as! [String]
+    }
+  }
 
     // MARK: - Table view data source
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -71,31 +81,5 @@ class FavsViewController: UITableViewController {
         let title = cell?.textLabel?.text
         sendToDetail(title: title!)
     }
-
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
